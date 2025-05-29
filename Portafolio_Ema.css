@@ -27,15 +27,17 @@ nav{
 }
 #lista-no-ordenada{
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 10px;
     background-color: rgb(0, 255, 55);
-    padding: 20px;
+    padding: 100px;
+    margin-right: 20px;
 }
 
 .tablilla{
     display: flex;
     justify-content: end;
+    z-index: 100;
 }
 
 #tabla{
@@ -43,7 +45,10 @@ nav{
     height: 100px;
     background-color: rgb(0, 225, 255);
     transform: rotate(-320deg);
-    padding: 10px
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 10px 15px 10px rgba(0,0,0,0.5);
+    border: 10px ridge rgb(0, 0, 0);
 }
 h1{
     background-color: antiquewhite;
@@ -52,13 +57,19 @@ h1{
     margin: 10px;
     border: 10px solid #333;
 }
+h1::first-line{
+    font-size: 60px;
+}
 
-img {
+img{
     height: 500px;
     filter: hue-rotate(1000deg);
     width: 400px;
     border: 10px ridge rgb(0, 0, 0);
     transition: 2s;
+    box-shadow: 10px 15px 10px rgba(0,0,0,0.5);
+    margin-left: 200px ;
+    transform: skew(20deg)
 }
 
 img:hover{
